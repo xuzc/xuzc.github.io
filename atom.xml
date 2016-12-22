@@ -4,9 +4,9 @@
   <subtitle>记录.分享.交流</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="xuzc.me/"/>
+  <link href="http://www.xuzc.me/"/>
   <updated>2016-12-22T02:49:33.000Z</updated>
-  <id>xuzc.me/</id>
+  <id>http://www.xuzc.me/</id>
   
   <author>
     <name>xuzc</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="xuzc.me/2016/12/22/hello-world/"/>
-    <id>xuzc.me/2016/12/22/hello-world/</id>
+    <link href="http://www.xuzc.me/2016/12/22/hello-world/"/>
+    <id>http://www.xuzc.me/2016/12/22/hello-world/</id>
     <published>2016-12-22T02:49:33.000Z</published>
     <updated>2016-12-22T02:49:33.000Z</updated>
     
