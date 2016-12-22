@@ -110,7 +110,7 @@ github 帐号
 开始安装 hexo 官方中文文档123$ npm install -g hexo">
 <meta property="og:image" content="http://www.xuzc.me/images/Mac-github-pages-with-hexo/mac-github-pages-with-hexo-01.png">
 <meta property="og:image" content="http://www.xuzc.me/images/Mac-github-pages-with-hexo/mac-github-pages-with-hexo-02.png">
-<meta property="og:updated_time" content="2016-12-22T14:46:32.000Z">
+<meta property="og:updated_time" content="2016-12-22T14:48:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下创建属于自己的博客（github pages with hexo）">
 <meta name="twitter:description" content="准备
@@ -403,11 +403,11 @@ github 帐号
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo -v</div><div class="line">$ npm -v</div></pre></td></tr></table></figure>
 <h3 id="使用-hexo-创建项目"><a href="#使用-hexo-创建项目" class="headerlink" title="使用 hexo 创建项目"></a>使用 hexo 创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog //其中blog是本地的工作目录，按照个人喜好命名</div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 <p>如果在blog目录下看到这样的目录结构就说明创建成功：<br><img src="/images/Mac-github-pages-with-hexo/mac-github-pages-with-hexo-01.png" alt=""></p>
-<h3 id="与-github-项目绑定"><a href="#与-github-项目绑定" class="headerlink" title="与 github 项目绑定"></a>与 github 项目绑定</h3><p>注意：必须创建一个以自己的github帐号名称为前缀形如 \<account-name>.github.io 的github项目</account-name></p>
+<h3 id="与-github-项目绑定"><a href="#与-github-项目绑定" class="headerlink" title="与 github 项目绑定"></a>与 github 项目绑定</h3><p>注意：必须创建一个以自己的github帐号名称为前缀形如 {account-name}.github.io 的github项目</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim _config.yml</div></pre></td></tr></table></figure>
 <p>修改：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/&lt;account-name&gt;/&lt;account-name&gt;.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>注：其中 \<account-name> 指的是github帐号名称，例如我的是 xuzc </account-name></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/&#123;account-name&#125;/&#123;account-name&#125;.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>注：其中 {account-name} 指的是github帐号名称，例如我的是 xuzc </p>
 <h3 id="生成博客页面并部署网站"><a href="#生成博客页面并部署网站" class="headerlink" title="生成博客页面并部署网站"></a>生成博客页面并部署网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g <span class="_">-d</span>  // g是generate的简写, d是deploy的简写，文件生成后立即部署网站</div></pre></td></tr></table></figure>
 <p>如果想清除缓存，重新生成所有页面：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
