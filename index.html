@@ -107,15 +107,15 @@
 <h3 id="与-github-项目绑定"><a href="#与-github-项目绑定" class="headerlink" title="与 github 项目绑定"></a>与 github 项目绑定</h3><p>注意：必须创建一个以自己的github帐号名称为前缀形如 <figure class="highlight plain"><figcaption><span>```的github项目</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">``` bash</div><div class="line">$ vim _config.yml</div></pre></td></tr></table></figure></p>
 <p>修改：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/&lt;account-name&gt;/&lt;account-name&gt;.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>注：其中<figure class="highlight plain"><figcaption><span>```指的是github帐号名称，例如我的是 ``` xuzc ```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 生成博客页面并发布</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo g -d  // g是generate的简写, d是deploy的简写，文件生成后立即部署网站</div></pre></td></tr></table></figure></p>
+<p>注：其中<figure class="highlight plain"><figcaption><span>```指的是github帐号名称，例如我的是 ``` xuzc ```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 生成博客页面并部署网站</div><div class="line"></div><div class="line">``` bash</div><div class="line">$ hexo g -d  // g是generate的简写, d是deploy的简写，文件生成后立即部署网站</div></pre></td></tr></table></figure></p>
 <p>如果想清除缓存，重新生成所有页面：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
 <h3 id="与个人域名绑定（Godaddy）"><a href="#与个人域名绑定（Godaddy）" class="headerlink" title="与个人域名绑定（Godaddy）"></a>与个人域名绑定（Godaddy）</h3><p>在DNS管理面板上，添加：</p>
 <p><img src="/images/Mac-github-pages-with-hexo/mac-github-pages-with-hexo-02.png" alt=""></p>
 <p>然后在 blog/source/ 新建文件 CNAME 并写入自己的域名：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xuzc.com</div><div class="line">www.xuzc.com</div></pre></td></tr></table></figure>
-<p>最后重新生成并部署网站就可以使用自己的域名进行访问。</p>
-
+<p>最后重新生成并部署网站就可以使用自己的域名进行访问：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
