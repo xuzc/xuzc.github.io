@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuzc.me/"/>
-  <updated>2016-12-22T09:33:58.000Z</updated>
+  <updated>2016-12-22T09:38:27.000Z</updated>
   <id>http://www.xuzc.me/</id>
   
   <author>
@@ -17,18 +17,17 @@
   
   <entry>
     <title>Mac下创建属于自己的博客（github pages with hexo）</title>
-    <link href="http://www.xuzc.me/2016/12/22/mac-github-pages-with-domain/"/>
-    <id>http://www.xuzc.me/2016/12/22/mac-github-pages-with-domain/</id>
+    <link href="http://www.xuzc.me/2016/12/22/mac-github-pages-with-hexo/"/>
+    <id>http://www.xuzc.me/2016/12/22/mac-github-pages-with-hexo/</id>
     <published>2016-12-22T02:49:33.000Z</published>
-    <updated>2016-12-22T09:33:58.000Z</updated>
+    <updated>2016-12-22T09:38:27.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
-<li><p>mac 版本号： <figure class="highlight plain"><figcaption><span>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* git 版本号： ``` git version 2.7.4 (Apple Git-66)</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>node 版本号：<figure class="highlight plain"><figcaption><span>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* npm 版本号：``` 3.10.9</div></pre></td></tr></table></figure></p>
-</li>
-<li><p>github 帐号</p>
-</li>
+<li>mac 版本号： <strong>10.11.6</strong></li>
+<li>git 版本号： <strong>git version 2.7.4 (Apple Git-66)</strong></li>
+<li>node 版本号：<strong>v6.9.2</strong></li>
+<li>npm 版本号： <strong>3.10.9</strong></li>
+<li>github 帐号</li>
 </ul>
 <p>注：其中node安装包中已集成了npm，所以安装node即代表已安装了npm （<a href="https://nodejs.org/dist/v6.9.2/node-v6.9.2.pkg" target="_blank" rel="external">node最新稳定版下载地址</a>）</p>
 <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="安装-hexo-官方中文文档"><a href="#安装-hexo-官方中文文档" class="headerlink" title="安装 hexo 官方中文文档"></a>安装 hexo <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官方中文文档</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div><div class="line">$ npm install hexo --save</div><div class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
@@ -52,7 +51,8 @@
     <summary type="html">
     
       &lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;mac 版本号： &lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;``
+&lt;li&gt;mac 版本号： &lt;strong&gt;10.11.6&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;git 版本号： &lt;strong&gt;git 
     
     </summary>
     
