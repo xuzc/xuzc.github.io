@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuzc.me/"/>
-  <updated>2017-01-05T14:27:38.000Z</updated>
+  <updated>2017-01-05T14:47:42.000Z</updated>
   <id>http://www.xuzc.me/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://www.xuzc.me/2017/01/05/composer-tips/"/>
     <id>http://www.xuzc.me/2017/01/05/composer-tips/</id>
     <published>2017-01-05T14:18:00.000Z</published>
-    <updated>2017-01-05T14:27:38.000Z</updated>
+    <updated>2017-01-05T14:47:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>1、使用国内的全量镜像 (<a href="http://pkg.phpcomposer.com/" target="_blank" rel="external">传送门</a>)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//推荐全局生效方式</div><div class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com</div></pre></td></tr></table></figure>
+<p>为什么要使用国内的镜像？对于我来说，这样我每天可以少喝几杯咖啡（😃😃）</p>
 <p>2、使用私有包（这边举例 gitlab）</p>
 <p>在应用级composer.json文件中，　<strong>必须</strong>定义私有包的源地址</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&quot;repositories&quot;: [</div><div class="line">    &#123;&quot;type&quot;: &quot;vcs&quot;, &quot;url&quot;: &quot;git@git.&#123;your-domain&#125;.com:packages/packageA.git&quot;&#125;,</div><div class="line">    &#123;&quot;type&quot;: &quot;vcs&quot;, &quot;url&quot;: &quot;git@git.&#123;your-domain&#125;.com:packages/packageB.git&quot;&#125;</div><div class="line">]</div></pre></td></tr></table></figure>
